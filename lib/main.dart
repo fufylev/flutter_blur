@@ -54,12 +54,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ClipRect(
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 40, sigmaY: 40),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.red.withOpacity(0.1), // here is the root of the problem
+                child: Opacity(
+                  opacity: 0.2,
+                  child: Container(
+                    // decoration: BoxDecoration(
+                    //   color: Colors.red.withValues(alpha: 0.2),
+                    // ),
+                    width: double.infinity,
+                    height: 80,
                   ),
-                  width: double.infinity,
-                  height: 80,
                 ),
               ),
             )
