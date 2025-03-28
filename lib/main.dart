@@ -57,9 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Opacity(
                   opacity: 0.2,
                   child: Container(
-                    // decoration: BoxDecoration(
-                    //   color: Colors.red.withValues(alpha: 0.2),
-                    // ),
+                    decoration: const BoxDecoration(color: Colors.red),
                     width: double.infinity,
                     height: 80,
                   ),
